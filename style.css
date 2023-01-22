@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'geometria';
+    src: url('./fonts/geometria_light.otf');
+    font-weight: 300;
+    font-style: light;
+}
+@font-face {
+    font-family: 'geometria-extrabold';
+    src: url('./fonts/geometria_extrabold.otf');
+    font-weight: 800;
+    font-style: bold;
+}
+
+
+html {
+    font-family: 'geometria', 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    position: relative;
+}
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    margin-bottom: 25px;
+}
+.header__main-logo {
+    display: flex;
+    align-items: center;
+}
+.header__main-text {
+    width: 195px;
+    margin-left: 30px;
+}
+.header__main-number {
+    width: 272px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__main-number-number {
+    text-decoration: none;
+    color: #000000;
+    font-size: 28px;
+    height: 50px;
+}
+.header__main-button {
+    width: 272px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #2A94E2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header__main-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.burger:not(:last-child) {    
+    margin-bottom: 7px;
+}
+.burger {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #2A94E2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.promo {
+    padding-top: 170px;
+    padding-bottom: 70px;
+    background-image: url(./img/Rectangle.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.promo__title {
+    width: 286px;
+    font-size: 50px;
+    font-family: 'geometria-extrabold';
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 47px;
+}
+.promo__description-description {
+    max-width: 540px;
+    margin-bottom: 47px;
+    font-size: 22px;
+}
+.promo__description-progress {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.promo__description-card {
+    display: flex;
+    align-items: center;
+}
+.promo__description-value {
+    font-size: 80px;
+    margin-right: 20px;
+}
+.promo__description-text {
+    margin-right: 50px;
+}
+.promo__description-surprise {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.promo__surprise-text {
+    margin-left: 20px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2A94E2;
+    border-radius: 5px;
+    background-color: #2A94E2;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.promo__description-button {
+    width: 360px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.test {
+    margin-bottom: 60px;
+}
+.test__title {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 35px;
+    font-family: 'geometria-extrabold';
+}
+.test__title-under {
+    font-size: 22px;
+    font-family: 'geometria';
+}
+.test__test {
+    border: 3px solid #F6F6F6;
+    display: flex;
+}
+.test__questions {
+    padding: 40px 40px 18px 36px;
+    border-right: 3px solid #F6F6F6;
+}
+.test__question {
+    font-size: 22px;
+    font-family: 'geometria-extrabold';
+    margin-bottom: 30px;
+}
+.test__cards {
+    display: flex;
+    border-bottom: 3px solid #F6F6F6;
+    margin-bottom: 30px;
+}
+.test__card {
+    width: 334px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.test__card:not(:last-child) {
+    margin-right: 30px;
+}
+.test__card-img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 217px;
+}
+.test__text {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.test__progress {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.test__score {
+    font-size: 16px;
+    padding-bottom: 7px;
+    margin-right: 15px;
+}
+.test__next {
+    font-size: 16px;
+    cursor: pointer;
+    color: #2A94E2;
+    display: flex;
+    align-items: center;
+    padding-bottom: 7px;
+}
+.test__next-arrow {
+    text-align: start;
+    margin-left: 15px;
+}
+.test__list {
+    padding: 40px 44px 0px 40px;
+}
+.test__item {
+    margin-bottom: 30px;
+}
+.test__item {
+    display: flex;
+}
+.test__item-arrow {
+    margin-right: 25px;
+}
+.test__item-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.active-min-screen {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.active-max-screen {
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .active-max-screen {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .active-min-screen {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+        z-index: 0;
+    }
+    .header__main-logo-img {
+        width: 100px;
+        object-fit: contain;
+    }
+    .promo {
+        padding-top: 130px;
+        padding-bottom: 70px;
+        margin-bottom: 30px;
+    }
+    .promo__title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .burger:not(:last-child) {    
+        margin-bottom: 3px;
+    }
+    .burger {
+        width: 25px;
+        height: 5px;
+        border: 1px solid #2A94E2;
+        border-radius: 2.5px;
+    }
+    .promo__description-value {
+        font-size: 35px;
+    }
+    .promo__description-description {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .promo__description-text {
+        font-size: 16px;
+    }
+    .promo__description-progress {
+        margin-bottom: 20px;
+    }
+    .promo__description-surprise {
+        margin-bottom: 20px;
+    }
+    .promo__description-card:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .promo__description-button {
+        width: 300px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .test__title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .test__title-under {
+        font-size: 16px;
+    }
+    .test__item-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .test__card:not(:last-child) {
+        margin-right: 0px;
+    }
+    .test__cards {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .test__questions,
+    .test__list {
+        padding: 20px;
+    }
+    .test__question {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .test__text {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .test__item {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .active-max-screen {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .active-min-screen {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+        z-index: 0;
+    }
+    .promo__title {
+        font-size: 35px;
+    }
+    .promo__description-value {
+        font-size: 40px;
+    }
+    .promo__title {
+        margin-bottom: 20px;
+    }
+    .promo__description-description {
+        margin-bottom: 20px;
+    }
+    .promo__description-progress {
+        margin-bottom: 20px;
+    }
+    .promo__description-surprise {
+        margin-bottom: 20px;
+    }
+    .test__title-under {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .promo__description-value {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 1199.98px) {
+    .test__card {
+        width: calc(50% - 15px);
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .test__questions {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid #F6F6F6;
+    }
+    .test__list {
+        width: 100%;
+    }
+    .test__test {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+@media screen and (min-width: 1400px){
+
+}
